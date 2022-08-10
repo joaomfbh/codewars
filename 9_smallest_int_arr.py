@@ -1,6 +1,3 @@
-import os
-import sys
-
 # kata link
 # https://www.codewars.com/kata/55a2d7ebe362935a210000b2
 
@@ -17,7 +14,3 @@ You can assume, for the purpose of this kata, that the supplied array will not b
 def find_smallest_int(arr):
     arr.sort()
     return arr[0]
-
-my_list = sys.argv[1].split(',')
-tmp = [int(i) for i in my_list]
-print(find_smallest_int(tmp))
